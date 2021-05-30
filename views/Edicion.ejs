@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/Normalize.css">
+    <link rel="stylesheet" href="assets/css/modelado.css">
+
+</head>
+<body>
+    <header class="header-inicio">
+        <div class="header">
+            <div class="contenedor contenido-header">
+                <div class="menu-barra">
+                    <div class="organizacion-logo">
+                        <h1>MundoFPS</h1>
+                        <a href="index.html">
+                            <img src="assets/Imagenes/logo.png" alt="">   
+                        </a>
+                    </div>
+                    
+                    <nav class="navegacion">
+                        <nav class="navegacion">
+                            <a href="Admi.html"> <img src="assets/Imagenes/administrador(a).png" alt=""> Admin</a>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+ 
+
+    <section class="contenedor">
+        <div class="org-tablas">
+            <h1 class="texto-centrado">SELECCIONE EL REGISTRO QUE DESEA EDITAR</h1>
+            <table class="">
+                <thead>
+                    <th><h3>NO.</h3></th>
+                    <th><h3>Nombre</h3></th>
+                    <th><h3>Apellido</h3></th>
+                    <th><h3>Pais</h3> </th>
+                    <th><h3>Comentario</h3></th>
+                    <th><h3>Accion</h3></th>
+                </thead>
+
+                <tbody class="tabla">
+                    <%for(var i = 0 ; i < listaRegistro.length ; i++){%>
+                        <tr>
+                            <td><p class="texto-centrado"><%= i + 1 %> </p></td>
+                            <td><p class="texto-centrado"><%= listaRegistro[i].nombre %></p></td>
+                            <td><p class="texto-centrado"><%= listaRegistro[i].apellido %></p></td>
+                            <td><p class="texto-centrado"><%= listaRegistro[i].pais %></p></td>
+                            <td><p class="texto-centrado"><%= listaRegistro[i].correo %></p></td>
+                            <td><p class="texto-centrado"><%= listaRegistro[i].comentario %></p></td>
+                            <td><a href="/Edicion/<%= listaRegistro[i]._id %>" class="boton-tabla-editar"><img src="assets/Imagenes/editar2.png" alt=""></a></td>
+                        </tr>
+                       <% } %>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+
+    </section>
+   
+    <footer class="sitio-footer borde-cajas ">
+
+        <div class="contenedor-footer">
+            <nav class="navegacion">
+            <a href="">Categorias</a>
+            <a href="">Noticias </a>
+            <a href="">Comunidad</a>
+            <a href="">Mas</a>
+            </nav>
+        </div>
+        <div class="redes-sociales">  
+            <h4>Siguenos en nuestras redes sociales : </h4>
+            <a href="">
+                <img src="assets/Imagenes/facebook.png" alt="">        
+            </a>
+            <a href="">
+                <img src="assets/Imagenes/twitter.png" alt="">
+            </a>
+           <a href="">
+                <img src="assets/Imagenes/instagram.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/Imagenes/whatsapp.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/Imagenes/youtube.png" alt="">
+            </a>
+
+        </div> 
+        <p class="copyrigth">Todos los derechos reservados &copy;</p>
+        
+    </footer>
+
+    
+
+</body>
+</html>

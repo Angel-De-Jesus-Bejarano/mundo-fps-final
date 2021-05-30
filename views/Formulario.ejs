@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/Normalize.css">
+    <link rel="stylesheet" href="assets/css/modelado.css">
+
+</head>
+<body>
+    <header class="header-inicio">
+        <div class="header">
+            <div class="contenedor contenido-header">
+                <div class="menu-barra">
+                    <div class="organizacion-logo">
+                        <h1>MundoFPS</h1>
+                        <a href="index.html">
+                            <img src="assets/Imagenes/logo.png" alt="">   
+                        </a>
+                    </div>
+                    
+                    <nav class="navegacion">
+                        <a href="Categorias.html">Categorias</a>
+                        <a href="Noticias.html">Noticias </a>
+                        <a href="Comunidad.html">Comunidad</a>
+                        <a href="Tabla.html">TablaX</a>
+                        <a href="/Formulario">Formulario</a>
+                        
+                    </nav>
+            </div>
+        </div>
+
+    </header>
+
+  <main class="main-formulario contenedor">
+      <div class="encabezado-formulario">
+      <h1 class="texto-centrado">FORMULARIO</h1>
+      </div>
+      <div class="clase-principal">
+        <fieldset title="Formulario">
+            <legend>FORMULARIO CONTACTO</legend>
+            <form class="contenido-insertar" action="/add" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="ingrese su nombre" required >
+                <br>
+
+                <label for="aplellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="ingrese su apellido" required>
+                <br>
+
+                <label for="pais">Pais</label>
+                <input type="text" name="pais" placeholder="ingrese su pais de nacimiento" required >
+                <br>
+
+                <label for="pais">Correo</label>
+                <input type="email" name="correo" placeholder="Ingrese Su Email"  required>
+                <br>
+
+                <label for="Comentario">Comentario</label>
+                <textarea name="comentario" placeholder="Ingrese un comentario" id="" cols="30" rows="10" required></textarea>
+                <br>
+
+                <script>
+                    
+                </script>
+                <input  type="submit" value="Enviar" class="boton-comunidad hover" onclick="alerta()">
+            </form>
+        </fieldset>
+      </div>
+  </main>
+
+    
+    </section>
+   
+    <footer class="sitio-footer borde-cajas ">
+
+        <div class="contenedor-footer">
+            <nav class="navegacion">
+            <a href="">Categorias</a>
+            <a href="">Noticias </a>
+            <a href="">Comunidad</a>
+            <a href="">Mas</a>
+            </nav>
+        </div>
+        <div class="redes-sociales">  
+            <h4>Siguenos en nuestras redes sociales : </h4>
+            <a href="">
+                <img src="assets/Imagenes/facebook.png" alt="">        
+            </a>
+            <a href="">
+                <img src="assets/Imagenes/twitter.png" alt="">
+            </a>
+           <a href="">
+                <img src="assets/Imagenes/instagram.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/Imagenes/whatsapp.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/Imagenes/youtube.png" alt="">
+            </a>
+
+        </div> 
+        <p class="copyrigth">Todos los derechos reservados &copy;</p>
+        
+    </footer>
+
+    
+
+</body>
+</html>
